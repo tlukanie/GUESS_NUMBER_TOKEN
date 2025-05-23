@@ -126,29 +126,3 @@
 ## License
 
 MIT
-//compilation
-//truffle compile contracts/bsc/GuessToken_42.sol
-//truffle migrate --f 4 --to 4 --config truffle-config.bsc.js --network bscTestnet
-//enter console
-// truffle console --config truffle-config.bsc.js --network bscTestnet
-//const instance = await GuessToken_42.deployed();
-//await instance.guessNumber(42, { from: "0xYourCustomAddress" });
-// displays all addresses : await web3.eth.getAccounts()
-//await instance.requestToPlay({ from: accounts[1] });
-//await instance.approvePlayer(accounts[1], { from: accounts[0] });
-
-//set up owner variable: const owner = await instance.owner();
-//list of all accounts: const accounts = await web3.eth.getAccounts(); accounts
-//guessing number: await instance.guessNumber(42, { from: accounts[1] });
-//.exit
-
-
-
-//1. truffle console --config truffle-config.bsc.js --network bscTestnet
-//2. const accounts = await web3.eth.getAccounts();
-//3. list all the accounts: accounts
-//4. const instance = await GuessToken_42.deployed();
-//5. try to play: await instance.guessNumber(42, { from: accounts[1] });
-//6. request to play: await instance.requestToPlay({ from: accounts[1] });
-//7. approve player to play: await instance.approvePlayer(accounts[1], { from: accounts[0] });
-//8. try to play: await instance.guessNumber(42, { from: accounts[1] });
